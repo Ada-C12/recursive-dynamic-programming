@@ -56,8 +56,8 @@ refined_superdigit(n, k) = superdigit(148148148)
 = superdigit(1 + 4 + 8 + 1 + 4 + 8 + 1 + 4 + 8) 
 = superdigit(39) 
 = superdigit(3 + 9) 
-= superdigit (12) 
-= superdigit (1 + 2)
+= superdigit(12) 
+= superdigit(1 + 2)
 = 3
 ```
 
