@@ -7,8 +7,8 @@ def fibonacci(n, current = 2, solution = [0, 1])
   raise ArgumentError if n < 0
   return n if n == 0 || n == 1
   if n == current
-    return solution[n - 1] + solution[n - 2]
+    return solution[0] + solution[1]
   end
-  solution << solution[current - 1] + solution[current - 2]
+  solution = [solution[1], solution[0] + solution[1]]
   fibonacci(n, current + 1, solution)
 end
