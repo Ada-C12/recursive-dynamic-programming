@@ -33,6 +33,14 @@ describe "super_digit" do
     expect(answer).must_equal 6
   end
   
+  it "will return 9 for super_digit(999_999_999_999)" do
+    # Act
+    answer = super_digit(999_999_999_999)
+    
+    # Assert
+    expect(answer).must_equal 9
+  end
+  
   describe "refined superdigit" do 
     it "will return 1 for n = 1 and k = 1" do
       # Act
