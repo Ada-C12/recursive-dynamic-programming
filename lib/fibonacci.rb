@@ -1,7 +1,7 @@
 # Improved Fibonacci
 
 # Time Complexity - O(n) where n is the n passed as an argument. fib_helper is called n times.
-# Space Complexity - 0(n), the solutions array will have a length of 2 regardless of how large or small n is.
+# Space Complexity - 0(n), where n is the n passed in as an argument. The solutions array will have a length of 2 regardless of how large or small n is so the array will have a space complexity of O(1) but the system call stack will have n recursive calls on it, making the space complexity O(n).
 
 def fibonacci(n)
   return fib_helper([0,1], 2, n)
