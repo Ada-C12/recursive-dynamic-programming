@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-xdescribe "super_digit" do
+describe "super_digit" do
   it "will return 2 for super_digit(9875)" do
     # Act
     answer = super_digit(9875)
@@ -15,7 +15,7 @@ xdescribe "super_digit" do
 
     # Assert
     expect(answer).must_equal 5
-   end
+  end
 
   it "will return 6 for super_digit(123)" do
     # Act
