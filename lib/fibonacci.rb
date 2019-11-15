@@ -15,9 +15,12 @@ def fib_helper(solutions, current, n)
   return n if n == 0 || n == 1
   
   if current == n
-    return solutions[n - 1] + solutions[n-2]
+    return solutions[0] + solutions[1]
   end
   
-  solutions << solutions[current - 1] + solutions[current -2]
+  new_solution = solutions[0] + solutions[1]
+  solutions[0] = solutions[1]
+  solutions[1] = new_solution
+  
   return fib_helper(solutions, current + 1, n)
 end
