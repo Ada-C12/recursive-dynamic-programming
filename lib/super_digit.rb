@@ -16,9 +16,9 @@ def super_helper(n)
 end
   
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n * k)
+# Space Complexity - O(n * k)
 def refined_super_digit(n, k)
-    
+  return super_digit(n * k)
 end
     
