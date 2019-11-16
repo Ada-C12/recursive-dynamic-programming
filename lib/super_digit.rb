@@ -31,13 +31,10 @@ end
 
 
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(log n)
+# Space Complexity - O(log n)
 def refined_super_digit(n, k)
-  return sd_helper(n, memo = {})
-  
-end
-
-def sd_helper(n, memo)
-  
+  n_array = num2array(n)
+  n_sum = n_array.sum
+  return super_digit(n_sum*k)
 end
