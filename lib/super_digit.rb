@@ -2,6 +2,8 @@
 
 # Time Complexity - O(log n), b/c #steps grows every 10th power, not linearly
 # Space Complexity - O(log n)
+### I couldn't figure out a way to incorporate dynamic programming into this...
+### would I even benefit from dynamic programming...?
 def super_digit(n)
   if n < 10
     return n
