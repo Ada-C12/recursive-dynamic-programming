@@ -1,7 +1,7 @@
 # Improved Fibonacci
 
-# Time Complexity - O(n)
-# Space Complexity - O(n) (should be O(n))
+# Time Complexity - O(n). N is size of input number.
+# Space Complexity - O(n) because of the recursive calls on the stack (should be O(n))
 # Hint, you may want a recursive helper method
 def fibonacci(n)
   if n < 0
