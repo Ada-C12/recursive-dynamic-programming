@@ -1,7 +1,7 @@
 # Improved Fibonacci
 
 # Time Complexity - O(n) dependent on the amount of numbers generated
-# Space Complexity - O(n) only caching the last two sums (should be O(n))
+# Space Complexity - O(n) only caching the last two numbers (should be O(n))
 # Hint, you may want a recursive helper method
 
 def fibonacci(n)
