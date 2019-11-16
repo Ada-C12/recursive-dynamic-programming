@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - O(n) - where n is the number of digits
-# Space Complexity - O(n) - where n is the number of digits
+# Time Complexity - O(log n) - where n is the number of digits
+# Space Complexity - O(log n) - where n is the number of digits
 def super_digit(n)
   if (super_helper(n) / 10) == 0
     return super_helper(n)
@@ -16,9 +16,10 @@ def super_helper(n)
 end
   
 
-# Time Complexity - O(n * k)
-# Space Complexity - O(n * k)
+# Time Complexity - O(log n * k)
+# Space Complexity - O(log n * k)
 def refined_super_digit(n, k)
-  return super_digit(n * k)
+  answer = super_digit(n)
+  return super_digit(answer * k)
 end
     
