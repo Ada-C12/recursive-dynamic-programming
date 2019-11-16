@@ -7,7 +7,7 @@ def super_digit(n)
     return n
   else
     array = num2array(n)
-    return helper(array)
+    return super_digit(array.sum)
   end
 end
 
@@ -17,18 +17,6 @@ def num2array(number)
   array = number.to_s.split('')
   return array.map { |num| num.to_i}
 end
-
-def helper(array)
-  # O(log n) time & space
-  sum = array.sum
-  if sum < 10
-    return sum
-  else
-    new_array = num2array(sum)
-    return helper(new_array)
-  end
-end
-
 
 
 # Time Complexity - O(log n)
