@@ -1,31 +1,21 @@
 # Superdigit
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n)
+# Space Complexity - O(log2 n)
 def super_digit(n)
-  while (n / 10) != 0
-    n = super_digit_helper(n)
-  end
-  return n
-end
-
-def super_digit_helper(n) 
+  puts "super_digit("+n.to_s+")"
   if (n / 10) == 0
     return n
   else
-    last_digit = (n % 10)
-    n = (n / 10)
-    return last_digit + super_digit_helper(n)
+    sum = 0
+    while ((n / 10.0) > 0)
+      puts "  while"
+      sum += (n % 10)
+      n = (n / 10)
+    end
+    return super_digit(sum)
   end
 end
-
-# def super_digit(n)
-#   if n < 10
-#     return n
-#   else
-#     super_digit(n % 10 + super_digit(n / 10))
-#   end
-# end
 
 # Time Complexity - ?
 # Space Complexity - ?
