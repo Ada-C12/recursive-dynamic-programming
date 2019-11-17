@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - O(n)
-# Space Complexity - O(log2 n)
+# Time Complexity - O(n) where n is the number of digits in the input number
+# Space Complexity - O(log n)
 def super_digit(n)
   puts "super_digit("+n.to_s+")"
   if (n / 10) == 0
@@ -17,8 +17,10 @@ def super_digit(n)
   end
 end
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n)
+#     because the while loop to create the concatenated number
+#     and the while loop adding the digits of the number are not nested.
+# Space Complexity - O(log k * n)
 def refined_super_digit(n, k)
   concatenated_n = ''
   while k > 0
