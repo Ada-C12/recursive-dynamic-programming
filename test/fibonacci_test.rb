@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-describe "Fibonacci" do
+xdescribe "Fibonacci" do
   it "will raise an error for n < 0" do
     expect {
         # Act
