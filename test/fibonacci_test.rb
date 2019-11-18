@@ -39,18 +39,18 @@ describe "Fibonacci" do
     # Assert
     expect(answer).must_equal 3
   end
-  it "will return 5 for fib(5)" do
-    # Act
-    answer = fibonacci(4)
+  # it "will return 5 for fib(5)" do
+  #   # Act
+  #   answer = fibonacci(4)
 
-    # Assert
-    expect(answer).must_equal 3
-  end
-  it "will return 55 for fib(10)" do
-    # Act
-    answer = fibonacci(10)
+  #   # Assert
+  #   expect(answer).must_equal 3
+  # end
+  # it "will return 55 for fib(10)" do
+  #   # Act
+  #   answer = fibonacci(10)
 
-    # Assert
-    expect(answer).must_equal 55
-  end
+  #   # Assert
+  #   expect(answer).must_equal 55
+  # end
 end
