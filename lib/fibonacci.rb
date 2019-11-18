@@ -1,6 +1,6 @@
 # Improved Fibonacci
 
-# Time Complexity - ?
+# Time Complexity - O(n)
 # Space Complexity - O(n)
 # Hint, you may want a recursive helper method
 def fibonacci(n)
