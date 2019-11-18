@@ -16,7 +16,7 @@ def digitize(n)
 end
 
 
-# Time Complexity - I'm pretty sure this solution doesn't reduce the time complexity, unfortunately. So it's O(knlogn)?
+# Time Complexity - I'm pretty sure this solution doesn't reduce the time complexity, unfortunately. So it's O(nlogn) still?
 # Space Complexity - O(logn)?
 def refined_super_digit(n, k)
   super_digit(n * k)
