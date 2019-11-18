@@ -20,11 +20,17 @@ def super_digit(input)
   end
 end
 
+# Time Complexity - O(n)
+# Space Complexity - O(m log n)
 
-# Time Complexity - ?
-# Space Complexity - ?
-def refined_super_digit(n, k)
-  
+# This method uses the super_digit method as a helper as I'm too lazy to write it again. 
+def refined_super_digit(number, repeater)
+  assembled_number = ""
+  dig_number = number.to_s
+  repeater.times do 
+    assembled_number = assembled_number + dig_number
+  end
+  return super_digit(super_digit(number) * repeater)
 end
 
 
