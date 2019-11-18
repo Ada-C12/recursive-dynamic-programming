@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - O(nlogn)?
-# Space Complexity - O(logn)?
+# Time Complexity - O(nlog10n)?
+# Space Complexity - O(log10n)?
 def super_digit(n)
   return n if n < 10
   super_digit(digitize(n))
@@ -16,8 +16,8 @@ def digitize(n)
 end
 
 
-# Time Complexity - I'm pretty sure this solution doesn't reduce the time complexity, unfortunately. So it's O(nlogn) still?
-# Space Complexity - O(logn)?
+# Time Complexity - I'm pretty sure this solution doesn't reduce the time complexity, unfortunately. So it's O(nlog10n) still?
+# Space Complexity - O(log10n)?
 def refined_super_digit(n, k)
   super_digit(n * k)
 end
