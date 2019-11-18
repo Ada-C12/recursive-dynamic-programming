@@ -10,7 +10,7 @@ def super_digit(n)
     sum += digit
   end
   return sum if sum.to_s.length == 1
-  return superdigit(sum)
+  return super_digit(sum)
 end
   
 
