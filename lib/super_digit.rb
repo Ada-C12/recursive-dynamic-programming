@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - o(n)
+# Space Complexity - o(n^2)
 def super_digit(n)
     return n if n < 10
     return super_digit(n.digits.sum)
