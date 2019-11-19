@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - ?
-# Space Complexity - ?
+# Time Complexity - O(n)
+# Space Complexity - O(n)
 def super_digit(n)
   super_digit_helper({}, n)
    
