@@ -1,7 +1,7 @@
 # Superdigit
 
-# Time Complexity - O log n 
-# Space Complexity - ?
+# Time Complexity - O log n because with each operation we are cutting the total of n by at worst 10
+# Space Complexity - O log n
 def super_digit(n) 
   # base case
   if n <= 9
