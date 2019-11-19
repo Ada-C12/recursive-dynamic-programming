@@ -3,6 +3,10 @@
 # Time Complexity - O(n) where n is equal to the number of digits in the n-number passed in the method
 # Space Complexity - O(n) where n is equal to the number of times the super_digit method is placed on the call stack
 def super_digit(n)
+  # first modulo (n % 10) and add to a counter(number)
+  # until n%10 is equal 0
+  # then 
+
   number = n.to_s.split("")
   total = 0
   number.each do |num|
