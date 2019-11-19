@@ -13,5 +13,14 @@ end
 def fibonacci_helper(solutions, current, n)
   return n if n == 0 || n == 1
 
+  if current == n
+    return solutions[n-1] + solutions[n-2]
+  end
+  
+  temp = solutions[current - 1] + solutions[current-2]
 
+  solutions[0] = solutions[1]
+  solutions[1] = temp
+
+  return fibonacci_helper(solutions, current + 1, n)
 end
