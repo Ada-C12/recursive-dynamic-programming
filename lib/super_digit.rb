@@ -6,6 +6,9 @@ def super_digit(n)
    if n < 10
     return n
    end 
+
+   
+   return super_digit(n.digits.sum)
 end
   
 
