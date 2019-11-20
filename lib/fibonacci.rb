@@ -2,7 +2,8 @@ require 'pry'
 # Improved Fibonacci
 
 # Time Complexity - I think O(n)?
-# Space Complexity - ?  (should be O(n))
+# Space Complexity - TThere's an array being created, but it isn't dependent on the length of the array, so I think O(1)
+
 # Hint, you may want a recursive helper method
 def fibonacci(n)
   return fib_helper(n, fib_array = [0,1], fib = 2)
