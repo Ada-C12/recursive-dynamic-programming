@@ -3,13 +3,11 @@
 # Time Complexity - O(n) where n is the number of digits in the input number
 # Space Complexity - O(log n)
 def super_digit(n)
-  puts "super_digit("+n.to_s+")"
   if (n / 10) == 0
     return n
   else
     sum = 0
     while ((n / 10.0) > 0)
-      puts "  while"
       sum += (n % 10)
       n = (n / 10)
     end
