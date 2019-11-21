@@ -13,12 +13,15 @@ end
 def fib_helper(solutions, current, n)
   return n if n == 0 || n == 1
   
+  last_solution = solutions[-1]
+  new_solution = solutions[0] + solutions[1]
+  
   if current == n
-    return solutions[n - 1] + solutions[n - 2]
+    return new_solution
   end 
   
-  solutions << solutions[current - 1] + solutions[current - 2]
+  solutions = [last_solution, new_solution]
   return fib_helper(solutions, current + 1, n)
-end 
+end
 
 # pp fibonacci(9)
