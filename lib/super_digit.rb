@@ -12,7 +12,7 @@ end
 # Time Complexity - O(lg(n))
 # Space Complexity - O(lg(n))
 def refined_super_digit(n, k, sum = 0)
-  return (sum + k * n) if k * n % 10 == n
+  return (sum + k * n) if k * n % 10 == k*n
   sum = super_digit(k * n / 10, sum + k * n % 10)
   super_digit(sum, 0)
 end
